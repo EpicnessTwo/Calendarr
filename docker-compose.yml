@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  web:
+    image: epickittyxp/calendarr
+    build: .
+    ports:
+      - "9999:9999"
+    environment:
+      - SONNAR_ICS=${SONNAR_ICS}
+      - RADARR_ICS=${RADARR_ICS}
