@@ -7,5 +7,5 @@ services:
     ports:
       - "9999:9999"
     environment:
-      - SONNAR_ICS=${SONNAR_ICS}
+      - SONARR_ICS=${SONARR_ICS}
       - RADARR_ICS=${RADARR_ICS}
