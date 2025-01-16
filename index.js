@@ -122,7 +122,7 @@ async function fetchAndStoreEvents(url, prefix) {
 setInterval(() => {
     fetchAndStoreEvents(SONARR_ICS, 'Sonarr');
     fetchAndStoreEvents(RADARR_ICS, 'Radarr');
-}, 600000); // Every 10 minutes
+}, 60000); // Every 1 minute
 
 // Unified JSON feed
 app.get('/events.json', (req, res) => {
