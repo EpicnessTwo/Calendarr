@@ -9,7 +9,7 @@ const NodeCache = require('node-cache');
 
 const app = express();
 const PORT = 9999;
-const cache = new NodeCache({ stdTTL: 600 }); // Cache TTL set to 10 minutes
+const cache = new NodeCache({ stdTTL: 10 }); // Cache TTL set to 10 seconds
 const dbPath = path.join(__dirname, 'events.db');
 const dbExists = fs.existsSync(dbPath);
 const db = new sqlite3.Database(dbPath);
